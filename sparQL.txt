@@ -1,0 +1,29 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX party: <http://www.party.com/ontologies/party.owl#>
+SELECT ?p ?view
+	WHERE { ?p a party:Party .
+	?p party:hasDunBradstreetView ?view .
+	?view a party:DunBradstreetView .
+}
+
+SELECT (str(?partyId) as ?id) ( str(?partyName) as ?nume)
+	WHERE { ?p a party:Party;
+		party:hasPartyId ?partyId;
+		party:hasPartyName ?partyName .
+}
+
+
+SELECT DISTINCT ?p (str(?partyName) as ?nume) (str(?dunsAddress) as ?adresa) ?submission ?layer
+WHERE {
+	?p a party:Party;
+	party:hasPartyName ?partyName;
+	party:hasDunBradstreetView ?dunsView.
+	?dunsView party:hasDunsAddress ?dunsAddress .
+	?p party:hasPartyView ?partyView .
+	?partyView party:submittedSubmission ?submission ;
+	party:hasLayer ?layer.
+	
+}

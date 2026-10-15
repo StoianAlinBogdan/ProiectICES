@@ -1,0 +1,931 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.party.com/ontologies/party.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.party.com/ontologies/party.owl">
+    <Prefix name="" IRI="http://www.semanticweb.org/xbobo/ontologies/2025/0/untitled-ontology-10/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Ontology for a Knowledge Graph for an insurance and reinsurance company, which wants to model the parties that it insures and reinsures in order to perform data analytics driven by AI.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#BusinessAreaPartition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DunBradstreetView"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EclipsePolicy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EclipseView"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Insured"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Party"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PartyLayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PartyView"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Policy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reinsured"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Submission"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ValuePartition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#View"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasChild"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDunBradstreetView"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEclipseView"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasInsurance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLayer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasParent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPartyView"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPolicy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasView"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfBusinessArea"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#submittedSubmission"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDataset"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDunsAddress"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDunsName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDunsNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPartyId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPartyLayerId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPartyName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPostgresPK"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSubmissionId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isActive"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DunsViewIndividual1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DunsViewIndividual2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DunsViewIndividual3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DunsViewIndividual4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DunsViewIndividual5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PartyIndividual1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PartyIndividual2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PartyIndividual3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PartyIndividual4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PartyIndividual5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PartyLayerIndividual1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PartyLayerIndividual2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PartyLayerIndividual3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PartyLayerIndividual4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PartyLayerIndividual5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PartyLayerIndividual6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PartyViewIndividual1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PartyViewIndividual2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PartyViewIndividual3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PartyViewIndividual4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PartyViewIndividual5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SubmissionIndividual1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SubmissionIndividual2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SubmissionIndividual3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SubmissionIndividual4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SubmissionIndividual5"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#BusinessAreaPartition"/>
+        <ObjectUnionOf>
+            <Class IRI="#Insured"/>
+            <Class IRI="#Reinsured"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EclipseView"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#View"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasPolicy"/>
+                <Class IRI="#EclipsePolicy"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#isPartOfBusinessArea"/>
+                <ObjectUnionOf>
+                    <Class IRI="#Insured"/>
+                    <Class IRI="#Reinsured"/>
+                </ObjectUnionOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Party"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasChild"/>
+                <Class IRI="#Party"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasDunBradstreetView"/>
+                <Class IRI="#DunBradstreetView"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasEclipseView"/>
+                <Class IRI="#EclipseView"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasParent"/>
+                <Class IRI="#Party"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasPartyView"/>
+                <Class IRI="#PartyView"/>
+            </ObjectAllValuesFrom>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#hasPartyView"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Party"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasDunsNumber"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PartyView"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#View"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#submittedSubmission"/>
+                <Class IRI="#Submission"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#isPartOfBusinessArea"/>
+                <Class IRI="#Insured"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#BusinessAreaPartition"/>
+        <Class IRI="#ValuePartition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DunBradstreetView"/>
+        <Class IRI="#View"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EclipsePolicy"/>
+        <Class IRI="#Policy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Insured"/>
+        <Class IRI="#BusinessAreaPartition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PartyLayer"/>
+        <Class IRI="#Policy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PartyView"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLayer"/>
+            <Class IRI="#PartyLayer"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reinsured"/>
+        <Class IRI="#BusinessAreaPartition"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#DunBradstreetView"/>
+        <Class IRI="#EclipseView"/>
+        <Class IRI="#PartyView"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EclipsePolicy"/>
+        <Class IRI="#PartyLayer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Insured"/>
+        <Class IRI="#Reinsured"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Party"/>
+        <Class IRI="#Policy"/>
+        <Class IRI="#Submission"/>
+        <Class IRI="#View"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#DunBradstreetView"/>
+        <NamedIndividual IRI="#DunsViewIndividual1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DunBradstreetView"/>
+        <NamedIndividual IRI="#DunsViewIndividual2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DunBradstreetView"/>
+        <NamedIndividual IRI="#DunsViewIndividual3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DunBradstreetView"/>
+        <NamedIndividual IRI="#DunsViewIndividual4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DunBradstreetView"/>
+        <NamedIndividual IRI="#DunsViewIndividual5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Party"/>
+        <NamedIndividual IRI="#PartyIndividual1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Party"/>
+        <NamedIndividual IRI="#PartyIndividual2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Party"/>
+        <NamedIndividual IRI="#PartyIndividual3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Party"/>
+        <NamedIndividual IRI="#PartyIndividual4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Party"/>
+        <NamedIndividual IRI="#PartyIndividual5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PartyLayer"/>
+        <NamedIndividual IRI="#PartyLayerIndividual1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PartyLayer"/>
+        <NamedIndividual IRI="#PartyLayerIndividual2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PartyLayer"/>
+        <NamedIndividual IRI="#PartyLayerIndividual3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PartyLayer"/>
+        <NamedIndividual IRI="#PartyLayerIndividual4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PartyLayer"/>
+        <NamedIndividual IRI="#PartyLayerIndividual5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PartyLayer"/>
+        <NamedIndividual IRI="#PartyLayerIndividual6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PartyView"/>
+        <NamedIndividual IRI="#PartyViewIndividual1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PartyView"/>
+        <NamedIndividual IRI="#PartyViewIndividual2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PartyView"/>
+        <NamedIndividual IRI="#PartyViewIndividual3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PartyView"/>
+        <NamedIndividual IRI="#PartyViewIndividual4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PartyView"/>
+        <NamedIndividual IRI="#PartyViewIndividual5"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDunBradstreetView"/>
+        <NamedIndividual IRI="#PartyIndividual1"/>
+        <NamedIndividual IRI="#DunsViewIndividual1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPartyView"/>
+        <NamedIndividual IRI="#PartyIndividual1"/>
+        <NamedIndividual IRI="#PartyViewIndividual1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDunBradstreetView"/>
+        <NamedIndividual IRI="#PartyIndividual2"/>
+        <NamedIndividual IRI="#DunsViewIndividual2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPartyView"/>
+        <NamedIndividual IRI="#PartyIndividual2"/>
+        <NamedIndividual IRI="#PartyViewIndividual2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDunBradstreetView"/>
+        <NamedIndividual IRI="#PartyIndividual3"/>
+        <NamedIndividual IRI="#DunsViewIndividual3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPartyView"/>
+        <NamedIndividual IRI="#PartyIndividual3"/>
+        <NamedIndividual IRI="#PartyViewIndividual3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDunBradstreetView"/>
+        <NamedIndividual IRI="#PartyIndividual4"/>
+        <NamedIndividual IRI="#DunsViewIndividual4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPartyView"/>
+        <NamedIndividual IRI="#PartyIndividual4"/>
+        <NamedIndividual IRI="#PartyViewIndividual4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDunBradstreetView"/>
+        <NamedIndividual IRI="#PartyIndividual5"/>
+        <NamedIndividual IRI="#DunsViewIndividual5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPartyView"/>
+        <NamedIndividual IRI="#PartyIndividual5"/>
+        <NamedIndividual IRI="#PartyViewIndividual5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLayer"/>
+        <NamedIndividual IRI="#PartyViewIndividual1"/>
+        <NamedIndividual IRI="#PartyLayerIndividual1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLayer"/>
+        <NamedIndividual IRI="#PartyViewIndividual1"/>
+        <NamedIndividual IRI="#PartyLayerIndividual6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#submittedSubmission"/>
+        <NamedIndividual IRI="#PartyViewIndividual1"/>
+        <NamedIndividual IRI="#SubmissionIndividual1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLayer"/>
+        <NamedIndividual IRI="#PartyViewIndividual2"/>
+        <NamedIndividual IRI="#PartyLayerIndividual2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#submittedSubmission"/>
+        <NamedIndividual IRI="#PartyViewIndividual2"/>
+        <NamedIndividual IRI="#SubmissionIndividual2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLayer"/>
+        <NamedIndividual IRI="#PartyViewIndividual3"/>
+        <NamedIndividual IRI="#PartyLayerIndividual3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#submittedSubmission"/>
+        <NamedIndividual IRI="#PartyViewIndividual3"/>
+        <NamedIndividual IRI="#SubmissionIndividual3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLayer"/>
+        <NamedIndividual IRI="#PartyViewIndividual4"/>
+        <NamedIndividual IRI="#PartyLayerIndividual4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#submittedSubmission"/>
+        <NamedIndividual IRI="#PartyViewIndividual4"/>
+        <NamedIndividual IRI="#SubmissionIndividual4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLayer"/>
+        <NamedIndividual IRI="#PartyViewIndividual5"/>
+        <NamedIndividual IRI="#PartyLayerIndividual5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#submittedSubmission"/>
+        <NamedIndividual IRI="#PartyViewIndividual5"/>
+        <NamedIndividual IRI="#SubmissionIndividual5"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDunsAddress"/>
+        <NamedIndividual IRI="#DunsViewIndividual1"/>
+        <Literal>123 Old Street</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDunsName"/>
+        <NamedIndividual IRI="#DunsViewIndividual1"/>
+        <Literal>AON UK Ltd.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDunsAddress"/>
+        <NamedIndividual IRI="#DunsViewIndividual2"/>
+        <Literal>77 Conway Ave</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDunsName"/>
+        <NamedIndividual IRI="#DunsViewIndividual2"/>
+        <Literal>Microsoft US Ltd.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDunsAddress"/>
+        <NamedIndividual IRI="#DunsViewIndividual3"/>
+        <Literal>Bd. Carol I 12 Bucuresti</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDunsName"/>
+        <NamedIndividual IRI="#DunsViewIndividual3"/>
+        <Literal>Carpathia Asigurari SRL</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDunsAddress"/>
+        <NamedIndividual IRI="#DunsViewIndividual4"/>
+        <Literal>12 New Street</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDunsName"/>
+        <NamedIndividual IRI="#DunsViewIndividual4"/>
+        <Literal>Google Romania Services SRL</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDunsAddress"/>
+        <NamedIndividual IRI="#DunsViewIndividual5"/>
+        <Literal>Bd. Alexandru cel Mare Timisoara</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDunsName"/>
+        <NamedIndividual IRI="#DunsViewIndividual5"/>
+        <Literal>Metropolitan Asigurari SA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDataset"/>
+        <NamedIndividual IRI="#PartyIndividual1"/>
+        <Literal>ri</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDunsNumber"/>
+        <NamedIndividual IRI="#PartyIndividual1"/>
+        <Literal>1234</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPartyId"/>
+        <NamedIndividual IRI="#PartyIndividual1"/>
+        <Literal>1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPartyName"/>
+        <NamedIndividual IRI="#PartyIndividual1"/>
+        <Literal>AON</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDataset"/>
+        <NamedIndividual IRI="#PartyIndividual2"/>
+        <Literal>ins</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDunsNumber"/>
+        <NamedIndividual IRI="#PartyIndividual2"/>
+        <Literal>1235</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPartyId"/>
+        <NamedIndividual IRI="#PartyIndividual2"/>
+        <Literal>2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPartyName"/>
+        <NamedIndividual IRI="#PartyIndividual2"/>
+        <Literal>Microsoft</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDataset"/>
+        <NamedIndividual IRI="#PartyIndividual3"/>
+        <Literal>ri</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDunsNumber"/>
+        <NamedIndividual IRI="#PartyIndividual3"/>
+        <Literal>1236</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPartyId"/>
+        <NamedIndividual IRI="#PartyIndividual3"/>
+        <Literal>3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPartyName"/>
+        <NamedIndividual IRI="#PartyIndividual3"/>
+        <Literal>Carpathia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDataset"/>
+        <NamedIndividual IRI="#PartyIndividual4"/>
+        <Literal>ins</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDunsNumber"/>
+        <NamedIndividual IRI="#PartyIndividual4"/>
+        <Literal>1237</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPartyId"/>
+        <NamedIndividual IRI="#PartyIndividual4"/>
+        <Literal>4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPartyName"/>
+        <NamedIndividual IRI="#PartyIndividual4"/>
+        <Literal>Google</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDataset"/>
+        <NamedIndividual IRI="#PartyIndividual5"/>
+        <Literal>ri</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDunsNumber"/>
+        <NamedIndividual IRI="#PartyIndividual5"/>
+        <Literal>1238</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPartyId"/>
+        <NamedIndividual IRI="#PartyIndividual5"/>
+        <Literal>5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPartyName"/>
+        <NamedIndividual IRI="#PartyIndividual5"/>
+        <Literal>Metropolitan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPartyLayerId"/>
+        <NamedIndividual IRI="#PartyLayerIndividual1"/>
+        <Literal>12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPartyLayerId"/>
+        <NamedIndividual IRI="#PartyLayerIndividual2"/>
+        <Literal>13</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPartyLayerId"/>
+        <NamedIndividual IRI="#PartyLayerIndividual3"/>
+        <Literal>14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPartyLayerId"/>
+        <NamedIndividual IRI="#PartyLayerIndividual4"/>
+        <Literal>15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPartyLayerId"/>
+        <NamedIndividual IRI="#PartyLayerIndividual5"/>
+        <Literal>16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPartyLayerId"/>
+        <NamedIndividual IRI="#PartyLayerIndividual6"/>
+        <Literal>17</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPostgresPK"/>
+        <NamedIndividual IRI="#PartyViewIndividual1"/>
+        <Literal>999</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isActive"/>
+        <NamedIndividual IRI="#PartyViewIndividual1"/>
+        <Literal>0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPostgresPK"/>
+        <NamedIndividual IRI="#PartyViewIndividual2"/>
+        <Literal>998</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isActive"/>
+        <NamedIndividual IRI="#PartyViewIndividual2"/>
+        <Literal>0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPostgresPK"/>
+        <NamedIndividual IRI="#PartyViewIndividual3"/>
+        <Literal>997</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isActive"/>
+        <NamedIndividual IRI="#PartyViewIndividual3"/>
+        <Literal>1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPostgresPK"/>
+        <NamedIndividual IRI="#PartyViewIndividual4"/>
+        <Literal>996</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isActive"/>
+        <NamedIndividual IRI="#PartyViewIndividual4"/>
+        <Literal>1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPostgresPK"/>
+        <NamedIndividual IRI="#PartyViewIndividual5"/>
+        <Literal>995</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isActive"/>
+        <NamedIndividual IRI="#PartyViewIndividual5"/>
+        <Literal>0</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasChild"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasDunBradstreetView"/>
+        <ObjectProperty IRI="#hasView"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasEclipseView"/>
+        <ObjectProperty IRI="#hasView"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasInsurance"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasLayer"/>
+        <ObjectProperty IRI="#hasInsurance"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasParent"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPartyView"/>
+        <ObjectProperty IRI="#hasView"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPolicy"/>
+        <ObjectProperty IRI="#hasInsurance"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasView"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isPartOfBusinessArea"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#submittedSubmission"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasChild"/>
+        <ObjectProperty IRI="#hasParent"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isPartOfBusinessArea"/>
+    </FunctionalObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasChild"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasParent"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasChild"/>
+        <Class IRI="#Party"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDunBradstreetView"/>
+        <Class IRI="#Party"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEclipseView"/>
+        <Class IRI="#Party"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasInsurance"/>
+        <Class IRI="#View"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLayer"/>
+        <Class IRI="#PartyView"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasParent"/>
+        <Class IRI="#Party"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPartyView"/>
+        <Class IRI="#Party"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPolicy"/>
+        <Class IRI="#EclipseView"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasView"/>
+        <Class IRI="#Party"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfBusinessArea"/>
+        <Class IRI="#EclipseView"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfBusinessArea"/>
+        <Class IRI="#PartyView"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#submittedSubmission"/>
+        <Class IRI="#PartyView"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasChild"/>
+        <Class IRI="#Party"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDunBradstreetView"/>
+        <Class IRI="#DunBradstreetView"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEclipseView"/>
+        <Class IRI="#EclipseView"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasInsurance"/>
+        <Class IRI="#Policy"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLayer"/>
+        <Class IRI="#PartyLayer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasParent"/>
+        <Class IRI="#Party"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPartyView"/>
+        <Class IRI="#PartyView"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPolicy"/>
+        <Class IRI="#EclipsePolicy"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasView"/>
+        <Class IRI="#View"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfBusinessArea"/>
+        <Class IRI="#BusinessAreaPartition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#submittedSubmission"/>
+        <Class IRI="#Submission"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasDataset"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasDunsAddress"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasDunsName"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasDunsNumber"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasPartyId"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasPartyName"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasPostgresPK"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasSubmissionId"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#isActive"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
